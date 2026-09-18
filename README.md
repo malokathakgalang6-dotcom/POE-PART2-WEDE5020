@@ -1,6 +1,6 @@
 # COPPERLEAF ELECTRICAL - WEDE5020 POE Part 2
 
-Student: Maloka Thakgalang
+Student: Maloka Thakgalang ST 10512359
 Module: WEDE5020 - Web Development
 Part: Part 2 - Styling and Responsive Design
 
