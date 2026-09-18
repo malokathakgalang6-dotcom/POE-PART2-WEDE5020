@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Enquiry - Copperleaf Electrical</title>
+
+    <!-- Link to the website stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <h1>Copperleaf Electrical</h1>
+
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <img src="images/enquiry-png.jpeg" alt="Copperleaf Electrical services">
+
+
+        <section class="content-section">
+            <h2>Make an Enquiry</h2>
+
+            <p>
+                Complete the form below if you would like more information
+                about our electrical services or would like to request a
+                quotation.
+            </p>
+        </section>
+
+
+        <section class="content-section">
+
+            <form id="enquiryForm">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+
+                <label for="service">Service Required:</label>
+
+                <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="residential">Residential Electrical Services</option>
+                    <option value="commercial">Commercial Electrical Services</option>
+                    <option value="industrial">Industrial Electrical Services</option>
+                    <option value="repairs">Repairs and Maintenance</option>
+                    <option value="inspection">Electrical Inspection</option>
+                </select>
+
+
+                <label for="message">Your Enquiry:</label>
+
+                <textarea id="message" name="message" rows="6"
+                    placeholder="Tell us about the electrical service you need" required></textarea>
+
+
+                <button type="submit">Submit Enquiry</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Copperleaf Electrical. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("enquiryForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            alert("Thank you! Your enquiry has been submitted successfully.");
+
+            this.reset();
+        });
+    </script>
+
+</body>
+
+</html>
